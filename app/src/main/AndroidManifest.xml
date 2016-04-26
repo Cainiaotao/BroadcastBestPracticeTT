@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tantao.broadcastbestpractice">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".broadcast.LoaclReceiver">
+            <intent-filter>
+                <action android:name="com.example.tantao.broadcastbestpractice.LOACL_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SqlActivity"
+            android:label="@string/title_activity_sql"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NotifiActivity"
+            android:label="@string/title_activity_notifi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NotifiMessageActivity"
+            android:label="@string/title_activity_notifi_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SerivceActivity" />
+
+        <service android:name=".service.MyService" />
+        <service android:name=".service.MyIntentService" />
+        <service android:name=".service.LongRunningService" />
+
+        <activity android:name=".AlarmActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".HttpActivity" />
+        <activity
+            android:name=".MoreActivity"
+            android:label="@string/title_activity_more"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".XmlpullActivity" />
+        <activity
+            android:name=".JosngosnActivity"
+            android:label="@string/title_activity_josngosn"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoactionMapActivity"
+            android:label="@string/title_activity_loaction_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SerializableActivity"></activity>
+    </application>
+
+</manifest>

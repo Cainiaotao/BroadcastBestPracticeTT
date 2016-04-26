@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BroadcastBestPractice</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_sql">SqlActivity</string>
+    <string name="title_activity_notifi">NotifiActivity</string>
+    <string name="title_activity_notifi_message">NotifiMessageActivity</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="title_activity_josngosn">JosngosnActivity</string>
+    <string name="title_activity_loaction_map">LoactionMapActivity</string>
+</resources>
